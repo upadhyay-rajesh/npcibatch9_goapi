@@ -1,0 +1,305 @@
+Microsoft Windows [Version 10.0.19045.5965]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\R2v>d:
+
+D:\>mkdir go-crud-api && cd go-crud-api
+
+D:\go-crud-api>go mod init go-crud-api
+go: creating new go.mod: module go-crud-api
+
+D:\go-crud-api>go get -u gorm.io/gorm
+go: downloading gorm.io/gorm v1.30.0
+go: downloading github.com/jinzhu/now v1.1.5
+go: downloading github.com/jinzhu/inflection v1.0.0
+go: downloading golang.org/x/text v0.26.0
+go: added github.com/jinzhu/inflection v1.0.0
+go: added github.com/jinzhu/now v1.1.5
+go: added golang.org/x/text v0.26.0
+go: added gorm.io/gorm v1.30.0
+
+D:\go-crud-api>go get -u gorm.io/driver/mysql
+go: downloading gorm.io/driver/mysql v1.6.0
+go: downloading github.com/go-sql-driver/mysql v1.8.1
+go: added filippo.io/edwards25519 v1.1.0
+go: added github.com/go-sql-driver/mysql v1.9.3
+go: added gorm.io/driver/mysql v1.6.0
+
+D:\go-crud-api>go get -u github.com/gorilla/mux
+go: added github.com/gorilla/mux v1.8.1
+
+D:\go-crud-api>go get -u github.com/swaggo/swag/cmd/swag
+go: downloading github.com/swaggo/swag v1.16.4
+go: downloading github.com/urfave/cli/v2 v2.3.0
+go: downloading github.com/go-openapi/spec v0.20.4
+go: downloading sigs.k8s.io/yaml v1.3.0
+go: downloading github.com/KyleBanks/depth v1.2.1
+go: downloading golang.org/x/tools v0.33.0
+go: downloading github.com/urfave/cli/v2 v2.27.7
+go: downloading github.com/urfave/cli v1.22.17
+go: downloading sigs.k8s.io/yaml v1.4.0
+go: downloading github.com/go-openapi/spec v0.21.0
+go: downloading gopkg.in/yaml.v2 v2.4.0
+go: downloading golang.org/x/tools v0.34.0
+go: downloading github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d
+go: downloading github.com/go-openapi/jsonpointer v0.19.5
+go: downloading github.com/go-openapi/jsonreference v0.19.6
+go: downloading github.com/cpuguy83/go-md2man/v2 v2.0.7
+go: downloading github.com/cpuguy83/go-md2man v1.0.10
+go: downloading github.com/go-openapi/swag v0.19.15
+go: downloading github.com/go-openapi/jsonpointer v0.21.1
+go: downloading github.com/go-openapi/jsonreference v0.21.0
+go: downloading github.com/russross/blackfriday/v2 v2.0.1
+go: downloading github.com/PuerkitoBio/purell v1.1.1
+go: downloading github.com/go-openapi/swag v0.23.1
+go: downloading github.com/PuerkitoBio/purell v1.2.1
+go: downloading github.com/mailru/easyjson v0.7.6
+go: downloading github.com/russross/blackfriday/v2 v2.1.0
+go: downloading github.com/russross/blackfriday v1.6.0
+go: downloading github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: downloading golang.org/x/net v0.23.0
+go: downloading github.com/shurcooL/sanitized_anchor_name v1.0.0
+go: downloading github.com/mailru/easyjson v0.9.0
+go: downloading github.com/josharian/intern v1.0.0
+go: downloading golang.org/x/net v0.41.0
+go: downloading golang.org/x/net v0.40.0
+go: downloading github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1
+go: downloading gopkg.in/yaml.v3 v3.0.1
+go: added github.com/KyleBanks/depth v1.2.1
+go: added github.com/PuerkitoBio/purell v1.2.1
+go: added github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: added github.com/cpuguy83/go-md2man/v2 v2.0.7
+go: added github.com/go-openapi/jsonpointer v0.21.1
+go: added github.com/go-openapi/jsonreference v0.21.0
+go: added github.com/go-openapi/spec v0.21.0
+go: added github.com/go-openapi/swag v0.23.1
+go: added github.com/josharian/intern v1.0.0
+go: added github.com/mailru/easyjson v0.9.0
+go: added github.com/russross/blackfriday/v2 v2.1.0
+go: added github.com/shurcooL/sanitized_anchor_name v1.0.0
+go: added github.com/swaggo/swag v1.16.4
+go: added github.com/urfave/cli/v2 v2.27.7
+go: added github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1
+go: added golang.org/x/net v0.41.0
+go: upgraded golang.org/x/tools v0.33.0 => v0.34.0
+go: added gopkg.in/yaml.v2 v2.4.0
+go: added gopkg.in/yaml.v3 v3.0.1
+go: added sigs.k8s.io/yaml v1.4.0
+
+D:\go-crud-api>go get -u github.com/swaggo/http-swagger
+go: downloading github.com/swaggo/http-swagger v1.3.4
+go: downloading github.com/swaggo/files v0.0.0-20220610200504-28940afbdbfe
+go: downloading github.com/swaggo/files v1.0.1
+go: added github.com/swaggo/files v1.0.1
+go: added github.com/swaggo/http-swagger v1.3.4
+
+D:\go-crud-api>go get -u github.com/joho/godotenv
+go: added github.com/joho/godotenv v1.5.1
+
+D:\go-crud-api>go get -u golang.org/x/oauth2
+go: downloading golang.org/x/oauth2 v0.30.0
+go: added golang.org/x/oauth2 v0.30.0
+
+D:\go-crud-api>swag init
+'swag' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\go-crud-api>swag init
+'swag' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\go-crud-api>go install github.com/swaggo/swag/cmd/swag@latest
+go: downloading golang.org/x/text v0.14.0
+go: downloading golang.org/x/tools v0.7.0
+go: downloading golang.org/x/sys v0.18.0
+
+D:\go-crud-api>go install github.com/swaggo/swag/cmd/swag@latest
+
+D:\go-crud-api>swag init
+2025/06/17 23:22:52 Generate swagger docs....
+2025/06/17 23:22:52 Generate general API Info, search dir:./
+2025/06/17 23:22:54 create docs.go at docs/docs.go
+2025/06/17 23:22:54 create swagger.json at docs/swagger.json
+2025/06/17 23:22:54 create swagger.yaml at docs/swagger.yaml
+
+D:\go-crud-api>go run main.go
+2025/06/17 23:23:37 Server started at :8080
+exit status 0xc000013a
+
+D:\go-crud-api>go run main.go
+2025/06/17 23:28:11 Server started at :8080
+exit status 0xc000013a
+
+D:\go-crud-api>go run main.go
+2025/06/17 23:35:10 Server started at :8080
+exit status 0xc000013a
+
+D:\go-crud-api>swag init
+2025/06/17 23:36:52 Generate swagger docs....
+2025/06/17 23:36:52 Generate general API Info, search dir:./
+2025/06/17 23:36:54 create docs.go at docs/docs.go
+2025/06/17 23:36:54 create swagger.json at docs/swagger.json
+2025/06/17 23:36:54 create swagger.yaml at docs/swagger.yaml
+
+D:\go-crud-api>go run main.go
+2025/06/17 23:37:03 Server started at :8080
+exit status 0xc000013a
+
+D:\go-crud-api>go run main.go
+2025/06/17 23:39:06 Server started at :8080
+exit status 0xc000013a
+
+D:\go-crud-api>
+
+
+
+Microsoft Windows [Version 10.0.19045.5965]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\xampp\htdocs\synechroneoops>git init
+Initialized empty Git repository in C:/xampp/htdocs/synechroneoops/.git/
+
+C:\xampp\htdocs\synechroneoops>git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+C:\xampp\htdocs\synechroneoops>git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        day1 and day2 prerequisite/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\xampp\htdocs\synechroneoops>git branch -M main
+
+C:\xampp\htdocs\synechroneoops>git remote add origin https://github.com/Rkcptraining/synechrone_laravel.git
+
+C:\xampp\htdocs\synechroneoops>git add .
+
+C:\xampp\htdocs\synechroneoops>git commit -m "first commit"
+[main (root-commit) 513e448] first commit
+ 15 files changed, 419 insertions(+)
+ create mode 100644 day1 and day2 prerequisite/abstract_demo.php
+ create mode 100644 day1 and day2 prerequisite/aggregate_iterator_demo.php
+ create mode 100644 day1 and day2 prerequisite/anonymous_demo.php
+ create mode 100644 day1 and day2 prerequisite/class_demo.php
+ create mode 100644 day1 and day2 prerequisite/classtostring.php
+ create mode 100644 day1 and day2 prerequisite/clone_demo.php
+ create mode 100644 day1 and day2 prerequisite/final_demo.php
+ create mode 100644 day1 and day2 prerequisite/inheritence_demo.php
+ create mode 100644 day1 and day2 prerequisite/interface_demo.php
+ create mode 100644 day1 and day2 prerequisite/iterator_demo.php
+ create mode 100644 day1 and day2 prerequisite/namespace_demo.php
+ create mode 100644 day1 and day2 prerequisite/reflection_api_demo.php
+ create mode 100644 day1 and day2 prerequisite/static_demo.php
+ create mode 100644 day1 and day2 prerequisite/trait_demo.php
+ create mode 100644 day1 and day2 prerequisite/usenamespace_demo.php
+
+C:\xampp\htdocs\synechroneoops>git branch -M main
+
+C:\xampp\htdocs\synechroneoops>git remote add origin https://github.com/Rkcptraining/synechrone_laravel.git
+error: remote origin already exists.
+
+C:\xampp\htdocs\synechroneoops>git push -u origin main
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 4.96 KiB | 282.00 KiB/s, done.
+Total 18 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Rkcptraining/synechrone_laravel.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\xampp\htdocs\synechroneoops>git add .
+warning: in the working copy of 'day3_laravel_view_router_project_structure/facebookproject/resources/css/app.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day3_laravel_view_router_project_structure/facebookproject/resources/js/app.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day3_laravel_view_router_project_structure/facebookproject/resources/js/bootstrap.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day3_laravel_view_router_project_structure/facebookproject/resources/views/welcome.blade.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day3_laravel_view_router_project_structure/facebookproject/routes/console.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day3_laravel_view_router_project_structure/facebookproject/routes/web.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Dao/EmployeeDAO.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Http/Controllers/Controller.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Http/Controllers/EmployeeController.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Models/Employee.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Models/User.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Providers/AppServiceProvider.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Services/EmployeeService.php', LF will be replaced by CRLF the next time Git touches it
+
+C:\xampp\htdocs\synechroneoops>git commit -m "first commit"
+[main 6fd29b9] first commit
+ 16 files changed, 640 insertions(+)
+ create mode 100644 day3_laravel_view_router_project_structure/facebookproject/resources/css/app.css
+ create mode 100644 day3_laravel_view_router_project_structure/facebookproject/resources/js/app.js
+ create mode 100644 day3_laravel_view_router_project_structure/facebookproject/resources/js/bootstrap.js
+ create mode 100644 day3_laravel_view_router_project_structure/facebookproject/resources/views/employee.blade.php
+ create mode 100644 day3_laravel_view_router_project_structure/facebookproject/resources/views/hello.blade.php create mode 100644 day3_laravel_view_router_project_structure/facebookproject/resources/views/signup.blade.php
+ create mode 100644 day3_laravel_view_router_project_structure/facebookproject/resources/views/welcome.blade.php
+ create mode 100644 day3_laravel_view_router_project_structure/facebookproject/routes/console.php
+ create mode 100644 day3_laravel_view_router_project_structure/facebookproject/routes/web.php
+ create mode 100644 day4_controller_service_dao/app/Dao/EmployeeDAO.php
+ create mode 100644 day4_controller_service_dao/app/Http/Controllers/Controller.php
+ create mode 100644 day4_controller_service_dao/app/Http/Controllers/EmployeeController.php
+ create mode 100644 day4_controller_service_dao/app/Models/Employee.php
+ create mode 100644 day4_controller_service_dao/app/Models/User.php
+ create mode 100644 day4_controller_service_dao/app/Providers/AppServiceProvider.php
+ create mode 100644 day4_controller_service_dao/app/Services/EmployeeService.php
+
+C:\xampp\htdocs\synechroneoops>git push -u origin main
+Enumerating objects: 34, done.
+Counting objects: 100% (34/34), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (33/33), 21.09 KiB | 1.17 MiB/s, done.
+Total 33 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Rkcptraining/synechrone_laravel.git
+   513e448..6fd29b9  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\xampp\htdocs\synechroneoops>git add .
+warning: in the working copy of 'day4_controller_service_dao/app/Dao/EmployeeDAO.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Http/Controllers/EmployeeController.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/app/Services/EmployeeService.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/resources/css/app.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/resources/js/app.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/resources/js/bootstrap.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/resources/views/welcome.blade.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/routes/console.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'day4_controller_service_dao/routes/web.php', LF will be replaced by CRLF the next time Git touches it
+
+C:\xampp\htdocs\synechroneoops>git commit -m "first commit"
+[main 8cc29d4] first commit
+ 17 files changed, 611 insertions(+), 2 deletions(-)
+ create mode 100644 day4_controller_service_dao/resources/css/app.css
+ create mode 100644 day4_controller_service_dao/resources/js/app.js
+ create mode 100644 day4_controller_service_dao/resources/js/bootstrap.js
+ create mode 100644 day4_controller_service_dao/resources/views/dashboard.blade.php
+ create mode 100644 day4_controller_service_dao/resources/views/display.blade.php
+ create mode 100644 day4_controller_service_dao/resources/views/editEmployee.blade.php
+ create mode 100644 day4_controller_service_dao/resources/views/employee.blade.php
+ create mode 100644 day4_controller_service_dao/resources/views/hello.blade.php
+ create mode 100644 day4_controller_service_dao/resources/views/home.blade.php
+ create mode 100644 day4_controller_service_dao/resources/views/login.blade.php
+ create mode 100644 day4_controller_service_dao/resources/views/signup.blade.php
+ create mode 100644 day4_controller_service_dao/resources/views/welcome.blade.php
+ create mode 100644 day4_controller_service_dao/routes/console.php
+ create mode 100644 day4_controller_service_dao/routes/web.php
+
+C:\xampp\htdocs\synechroneoops>git push -u origin main
+Enumerating objects: 40, done.
+Counting objects: 100% (40/40), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (30/30), 20.97 KiB | 1.40 MiB/s, done.
+Total 30 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), completed with 5 local objects.
+To https://github.com/Rkcptraining/synechrone_laravel.git
+   6fd29b9..8cc29d4  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\xampp\htdocs\synechroneoops>
